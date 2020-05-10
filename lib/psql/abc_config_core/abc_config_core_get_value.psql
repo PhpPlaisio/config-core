@@ -1,0 +1,18 @@
+/**
+ * Selects the value of a configuration parameter of a company.
+ *
+ * @param p_cmp_id The ID of the company.
+ * @param p_cfg_id The ID of the configuration parameter.
+ */
+create procedure abc_config_core_get_value(in p_cmp_id @abc_config_value.cmp_id%type@,
+                                           in p_cfg_id @abc_config_value.cfg_id%type@)
+reads sql data
+-- type:   singleton0
+-- return: string|null
+begin
+  select acv_value
+  from   ABC_CONFIG_VALUE
+  where  cmp_id = p_cmp_id
+  and    cfg_id = p_cfg_id
+  ;
+end

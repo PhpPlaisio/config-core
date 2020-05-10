@@ -1,0 +1,30 @@
+/**
+ * Insets or updates the value of a configuration parameter.
+ *
+ * @param p_cmp_id    The ID of the company.
+ * @param p_cfg_id    The ID of the configuration parameter.
+ * @param p_acv_value The value of the configuration parameter.
+ */
+create procedure abc_config_merge_value(in p_cmp_id    @abc_config_value.cmp_id%type@,
+                                        in p_cfg_id    @abc_config_value.cfg_id%type@,
+                                        in p_acv_value @abc_config_value.acv_value%type@)
+modifies sql data
+-- type: none
+begin
+  if (p_acv_value is null) then
+    delete from ABC_CONFIG_VALUE
+    where cmp_id = p_cmp_id
+    and   cfg_id = p_cfg_id
+    ;
+  else
+    insert into ABC_CONFIG_VALUE( cmp_id
+    ,                             cfg_id
+    ,                             acv_value )
+    values( p_cmp_id
+    ,       p_cfg_id
+    ,       p_acv_value )
+    on duplicate key
+    update acv_value = p_acv_value
+    ;
+  end if;
+end

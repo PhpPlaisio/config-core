@@ -1,0 +1,44 @@
+{
+  "name": "plaisio/config-core",
+  "description": "PhpPlaisio: Core Config",
+  "keywords": [
+    "PhpPlaisio",
+    "Config",
+    "Core"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.3",
+    "ext-json": "*",
+    "plaisio/config": "dev-master",
+    "plaisio/kernel": "^2.0.1",
+    "setbased/helper-cast": "^2.1.1"
+  },
+  "require-dev": {
+    "phing/phing": "^2.0",
+    "phpunit/phpunit": "^9.0",
+    "plaisio/babel-core": "^1.2",
+    "plaisio/company-resolver-uni": "^1.1",
+    "plaisio/core": "^0.11.14",
+    "setbased/php-stratum": "^6.0",
+    "setbased/php-stratum-middle": "^5.6",
+    "setbased/php-stratum-mysql": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Plaisio\\Config\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Plaisio\\Config\\Test\\": "test/"
+    },
+    "classmap": [
+      "test/C.php"
+    ]
+  },
+  "config": {
+    "bin-dir": "bin/",
+    "sort-packages": true
+  }
+}
