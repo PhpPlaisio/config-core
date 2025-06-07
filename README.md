@@ -7,7 +7,6 @@
 <th>Legal</th>
 <th>Release</th>
 <th>Tests</th>
-<th>Code</th>
 </tr>
 </thead>
 <tbody>
@@ -24,9 +23,6 @@
 </td>
 <td><a href="https://travis-ci.org/PhpPlaisio/config-core"><img src="https://travis-ci.org/PhpPlaisio/config-core.svg?branch=master" alt="Build Status"/></a><br/>
 <a href="https://scrutinizer-ci.com/g/PhpPlaisio/config-core/?branch=master"><img src="https://scrutinizer-ci.com/g/PhpPlaisio/config-core/badges/coverage.png?b=master" alt="Code Coverage"/></a><br/>
-</td>
-<td>
-<a href="https://scrutinizer-ci.com/g/PhpPlaisio/config-core/?branch=master"><img src="https://scrutinizer-ci.com/g/PhpPlaisio/config-core/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"/></a>
 </td>
 </tr>
 </tbody>
