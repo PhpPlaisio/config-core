@@ -19,7 +19,7 @@
     "phpunit/phpunit": "^9.0",
     "plaisio/babel-core": "^1.2",
     "plaisio/company-resolver-uni": "^1.1",
-    "plaisio/core": "^0.11.14",
+    "plaisio/core": "^0.30.3",
     "setbased/php-stratum": "^6.0",
     "setbased/php-stratum-middle": "^5.6",
     "setbased/php-stratum-mysql": "^5.1"
